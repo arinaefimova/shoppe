@@ -1,0 +1,58 @@
+{
+  "name": "shoppe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage":"https://arinaefimova.github.io/shoppe",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "deploy":"gh-pages -d dist",
+    "predeploy":"npm run build"
+
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.4",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@reduxjs/toolkit": "^2.2.6",
+    "@types/debounce": "^1.2.4",
+    "antd": "^5.19.2",
+    "classnames": "^2.5.1",
+    "debounce": "^2.1.0",
+    "formik": "^2.4.6",
+    "install": "^0.13.0",
+    "json-server": "^1.0.0-beta.1",
+    "npm": "^10.8.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-redux": "^9.1.2",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.24.1",
+    "react-toastify": "^10.0.5",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.77.8",
+    "styled-components": "^6.1.12",
+    "swiper": "^11.1.4",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}

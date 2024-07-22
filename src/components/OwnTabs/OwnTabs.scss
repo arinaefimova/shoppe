@@ -1,0 +1,201 @@
+.tab--active{
+    color: var(--main-text-color);
+    font-weight: 700;
+    
+    @media (min-width: 450px){
+        text-decoration: underline 2px ;
+        text-underline-offset: 33.5px;
+    }
+}
+.tab--item{
+    color: var(--span-color);
+}
+.tabs {
+
+    &__header {
+        display: flex;
+         gap: 0 80px;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--border-color);
+        @media (max-width: 600px){
+              gap: 20px;
+              justify-content: space-between;
+              flex-wrap: wrap;
+        }
+        @media (max-width: 450px){
+              flex-direction: column;
+              align-items: flex-start;
+        }
+      
+    }
+
+    &__info {
+        padding-top: 30px;
+    }
+
+    &__descr {
+        color: var(--span-color);
+    }
+}
+.additional {
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 0 11px;
+    }
+
+    &__title {
+        color: var(--main-text-color);
+        font-weight: 700;
+    }
+
+    &__descr {
+        color: var(--span-color);
+    }
+}
+.reviews {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    @media (max-width: 650px){
+          flex-direction: column-reverse;
+    }
+
+    &__all-rev {
+        flex: 0 1 50%;
+        @media (max-width: 650px){
+           flex: 1 1 100%;
+           width: 100%;
+      }
+    }
+
+    &__add-rev {
+        flex: 0 1 50%;
+
+        @media (max-width: 650px){
+            flex: 1 1 100%;
+            
+       }
+    }
+}
+.all-rev {
+
+    &__title {
+        margin-bottom: 55px;
+        @media (max-width: 998px){
+              margin-bottom: 30px;
+        }
+    }
+    &__text{
+        color: var(--span-color);
+    }
+    &__item {
+        &:not(:last-child) {
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    &__author {
+        font-size: 20px;
+    }
+
+    &__date {
+        font-size: 14px;
+        color: var(--span-color);
+    }
+
+    &__rating {
+        margin-bottom: 24px;
+    }
+}
+.title-reviews {
+    font-size: 20px;
+    font-weight: 500;  
+}
+.add-rev {
+
+    &__title {
+        margin-bottom: 11px;
+    }
+
+    &__info {
+        color: var(--span-color);
+        text-transform: capitalize;
+        margin-bottom: 45px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        textarea {
+            resize: none;
+            outline: none;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            width: 100%;
+            
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        
+       
+        textarea::-webkit-scrollbar {
+            width: 7px; 
+        }
+        
+        textarea::-webkit-scrollbar-track {
+            background: var(--border-color); /* цвет фона трека */
+            border-radius: 10px; /* радиус скругления углов трека */
+        }
+        
+        textarea::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 10px; 
+        }
+        input{
+            outline: none;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            width: 100%;
+        }
+        button{
+            background-color: var(--main-text-color);
+            color: var(--main-bg-color);
+            padding: 15px 30px;
+            border: none;
+            max-width: 200px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-direction: column;
+        label{
+            color: var(--span-color);
+            margin-bottom: 10px;
+        }
+    }
+
+}
+.error{
+    color: red;
+}

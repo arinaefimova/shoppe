@@ -1,0 +1,105 @@
+.slider-th {
+	display: flex;
+	align-items: stretch;
+
+	flex-direction: row-reverse;
+	width: 60%;
+	flex: 1 1 60%;
+	gap: 40px;
+     position: relative;
+     @media (max-width: 1200px){
+          gap: 20px;
+     }
+    @media (max-width: 1100px){
+        flex: 1 1 100%;
+        width: 80%;
+        
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        // margin-right: 30px;
+        margin-bottom: 40px;
+    
+    }
+    @media (max-width: 850px){
+         width: 100%;
+         text-align: center;
+    }
+
+    .swiper-scrollbar {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        bottom: -14px; // Adjust as needed
+        left: 10px; // Adjust as needed
+        right: 10px; // Adjust as needed
+        height: 8px;
+        border-radius: 4px;
+        z-index: 10;
+
+        .swiper-scrollbar-drag {
+            background-color: red;
+            border-radius: 4px;
+        }
+    }
+    
+}
+
+.mySwiper2 {
+	width: 80%;
+    @media (max-width: 670px){
+          width: 100%;
+    }
+    
+	.swiper-slide {
+        border-radius: 8px;
+		img {
+            border-radius: 8px;
+           
+			height: 100%;
+			object-fit: cover;
+            @media (max-width: 1100px){
+                height: 540px;
+                @media (max-width: 500px){
+                      height: 400px;
+                }
+                @media (max-width: 400px){
+                      height: 300px;
+                }
+                  
+            }
+		}
+        
+	}
+    
+}
+//
+.mySwiper {
+	width: 20%;
+    @media (max-width: 1200px){
+        width: 120px;
+    }
+    @media (max-width:670px){
+          display: none;
+    }
+	.swiper-wrapper {
+		flex-direction: column;
+		gap: 40px;
+		height: 100%;
+        @media (max-width: 1200px){
+             gap:20px;
+        }
+		.swiper-slide {
+			width: 120px !important;
+			height: 120px;
+            border-radius: 8px;
+			flex: 0 0 120px;
+			img {
+                border-radius: 8px;
+				width: 120px;
+                
+				height: 120px;
+				object-fit: cover;
+			}
+		}
+	}
+}

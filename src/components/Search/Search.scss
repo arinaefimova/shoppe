@@ -1,0 +1,29 @@
+.search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 6px;
+	border: none;
+	padding: 7px;
+    
+	&.show {
+		border: 1px solid var(--main-text-color);
+		input {
+			width: 160px;
+		}
+	}
+	input {
+        transition: width 0.3s;
+		padding: 0 5px;
+		width: 0;
+        &::placeholder{
+            color: var(--span-color);
+        }
+        &:focus::placeholder {
+            color: transparent;
+          }
+  
+	}
+	
+}

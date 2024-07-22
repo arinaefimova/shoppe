@@ -1,0 +1,124 @@
+.footer {
+	color: var(--span-color);
+
+	&__row {
+		padding: 53px 0 60px 0;
+		border-top: 1px solid var(--border-color);
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 30px 20px;
+		@media (max-width: 630px) {
+			flex-direction: column-reverse;
+			padding: 40px 0;
+		}
+	}
+
+
+}
+.right-column-footer {
+	&__nav {
+		display: flex;
+		align-items: center;
+		gap: 0 40px;
+		margin-bottom: 48px;
+		@media (max-width: 950px) {
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
+		}
+	}
+
+	&__copy {
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
+		}
+		span {
+			color: var(--main-text-color);
+		}
+	}
+}
+.left-column-footer {
+	&__input {
+		margin-bottom: 50px;
+
+		div {
+			width: 396px;
+
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid var(--main-text-color);
+			justify-content: space-between;
+			@media (max-width: 800px) {
+				width: 300px;
+			}
+			@media (max-width: 350px) {
+				width: 270px;
+			}
+
+			input {
+				width: 100%;
+				padding: 0 5px 13px 5px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				&:focus::placeholder {
+					color: transparent;
+				}
+			}
+			button {
+				svg {
+					margin-top: -3px;
+					width: 25px;
+					transition: all 0.3s;
+					@media (any-hover: hover) {
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 0 30px;
+
+		justify-content: flex-end;
+		@media (max-width: 950px) {
+			gap: 0 20px;
+		}
+		@media (max-width: 630px) {
+			justify-content: flex-start;
+		}
+
+		svg {
+			transition: all 0.3s;
+			@media (any-hover: hover) {
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}
+.error-message {
+	margin-top: 10px;
+	color: red;
+}

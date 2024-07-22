@@ -1,0 +1,119 @@
+.info-own {
+
+    &__header {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__price {
+        font-size: 20px;
+        color: #A18A68;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:  15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        color: var(--span-color);
+        margin-bottom: 45px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        
+    }
+
+    &__calc {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: auto 0;
+        align-items: center;
+        background-color: var(--border-color);
+        color: var(--span-color);
+        gap: 0 25px;
+        padding: 14px;
+        border-radius: 4px;
+
+    }
+
+    &__add-to-cart {
+        border: 2px solid var(--main-text-color);
+        padding: 16px;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        max-width: 400px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        font-weight: 700;
+        @media (any-hover: hover){
+            &:hover{
+                background-color: var(--border-color);
+            }
+        }
+
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        color: var(--span-color);
+        margin-bottom: 35px;
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+
+    &__info-label {
+        font-weight: 500;
+    }
+
+    &__info-value {
+        color: var(--span-color);
+    }
+}
+.calc {
+
+    &__action {
+        transition: all 0.3s;
+        @media (any-hover: hover){
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+    }
+
+
+}
+.ant-rate-star-zero{
+    svg{
+
+        color: var( --border-color)!important;
+    }
+    
+
+}
